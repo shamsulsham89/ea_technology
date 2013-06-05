@@ -18,8 +18,8 @@
 //= require jquery.stellar.min
 //= require waypoints
 //= require sorting
-
-
+//= require jquery.fancybox
+//= require jquery-1.9.0.min
 
 jQuery(document).ready(function ($) {
 

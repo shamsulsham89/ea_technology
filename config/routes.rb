@@ -1,6 +1,6 @@
 EaTechnologies::Application.routes.draw do
   get "home/index"
-
+  get "home/web_design"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
