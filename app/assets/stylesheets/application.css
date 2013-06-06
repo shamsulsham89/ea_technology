@@ -2030,3 +2030,8 @@ table {
     text-align: justify;
     width: 100%;
 }
+
+
+.fancybox-custom .fancybox-skin {
+    box-shadow: 0 0 50px #222;
+  }

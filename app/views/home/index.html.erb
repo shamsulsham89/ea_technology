@@ -1,53 +1,4 @@
-<script type="text/javascript">
-  $(document).ready(function() {
-    
-    /*
-     *  Open manually
-     */
-    
-    $("#fancybox-manual-a").click(function() {
-      $.fancybox.open('1_b.jpg');
-    });
-    
-    $("#fancybox-manual-b").click(function() {
-      $.fancybox.open({
-        type: 'GET',
-        url: '/home/web_design',
-        type : 'iframe',
-        padding : 5
-      });
-    });
-    
-    $("#fancybox-manual-c").click(function() {
-      $.fancybox.open([
-        {
-          href : '1_b.jpg',
-          title : 'My title'
-        }, {
-          href : '2_b.jpg',
-          title : '2nd title'
-        }, {
-          href : '3_b.jpg'
-        }
-      ], {
-        helpers : {
-          thumbs : {
-            width: 75,
-            height: 50
-          }
-        }
-      });
-    });
-    
-    
-  });
-</script>
-<style type="text/css">
-  .fancybox-custom .fancybox-skin {
-    box-shadow: 0 0 50px #222;
-  }
-</style>
-
+<%= render "header_javascript" %>
 
 
 <div class="menu">	
@@ -70,7 +21,6 @@
   </div>
 </div>
 
-
 <div style="background-position: 0px -439px;" class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
   <div class="effect_2 padding_slide1">
     <div class="container clearfix">
@@ -85,115 +35,19 @@
           <a class="button second_btn" title="" data-slide="4">View Portfolio</a>
         </div>
       </div>
+
+
+      <ul>
+        <li><a id="fancybox-manual-c" href="javascript:;">Open gallery</a></li>
+      </ul>
+
+
     </div>
   </div>
 </div>
 
 
-<div style="background-position: 0px 0px;" class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-  <div class="container clearfix">
-
-    <div id="content" class="grid_12">
-      <h3><span>About</span></h3>
-      <h4>EA Technologies, a Florida based firm, was founded in early 2004 as a result of changing factors steering the course of IT organizations across the country. With a broad service offering and a determination to raise the bar of consulting expectations, EA Technologies has been well received and continues to grow quickly. EA Technologies offers solutions and professional services to those interested in bringing their organizations into the 21st century and using new technologies throughout.</h4>
-    </div>
-    <div id="content" class="grid_7">
-      <p class="morbi_text">Morbi sit amet neque turpis, quis dictum nisi. Maecenas laoreet convallis auctor. Phasellus a dui non eros dignissim</p>
-      <p>Aenean sagittis tortor quis nisl aliquet at rutrum nisi posuere. 
-        Ut sollicitudin congue orci sed aliquam. Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Morbi rutrum, elit ac fermentum egestas, 
-        tortor ante vestibulum est, eget scelerisque nisl velit eget tellus. 
-        Fusce porta facilisis luctus. Integer neque dolor, rhoncus nec euismod 
-        eget, pharetra et tortor. Nulla id pulvinar nunc. Vestibulum auctor nisl
-        vel lectus ullamcorper sed pellentesque dolor eleifend.</p>
-      <p>Praesent lobortis magna vel diam mattis sagittis. Mauris porta 
-        odio eu risus scelerisque id facilisis ipsum dictum. Donec fringilla 
-        pharetra sapien eget imperdiet. Vivamus iaculis ultricies mauris id 
-        posuere. Praesent mollis tincidunt diam, in sagittis odio tincidunt 
-        congue. Aliquam laoreet neque sit amet tortor pretium ut volutpat nunc 
-        iaculis.</p>
-    </div>
-    <div id="content" class="grid_5 omega">
-      <div id="jcarousel">
-        <div class=" jcarousel-skin-tango"><div style="position: relative; display: block;" class="jcarousel-container jcarousel-container-horizontal"><div style="position: relative;" class="jcarousel-clip jcarousel-clip-horizontal"><ul style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 1315px;" id="mycarousel" class="jcarousel-list jcarousel-list-horizontal">
-                <li jcarouselindex="1" style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal">
-                  <img src="STUDIO27%20-%20Photographer%20Website_files/about_img1.jpg">
-                </li>
-                <li jcarouselindex="2" style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-horizontal jcarousel-item-2 jcarousel-item-2-horizontal">
-                  <img src="STUDIO27%20-%20Photographer%20Website_files/about_img2.jpg">
-                </li>
-                <li jcarouselindex="3" style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-horizontal jcarousel-item-3 jcarousel-item-3-horizontal">
-                  <img src="STUDIO27%20-%20Photographer%20Website_files/about_img3.jpg">
-                </li>
-                <div class="clear"></div>
-              </ul></div><div style="display: block;" class="jcarousel-prev jcarousel-prev-horizontal"></div><div style="display: block;" class="jcarousel-next jcarousel-next-horizontal"></div></div></div>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div id="content" class="grid_12">
-      <h5><span>meet the team</span></h5>
-    </div>
-    <div class="clear"></div>
-
-    <div class="grid_3 team_block">
-      <a href="#"><img src="STUDIO27%20-%20Photographer%20Website_files/team1.jpg"></a>
-      <div class="team_inf">
-        <h4>peter smith</h4>
-        <p>Photographer</p>
-        Integer aliquet arcu sit amet sem porta facilisis. Curabitur sapien sapien, blandit in
-        <ul class="team_soc">
-          <li><a href="#" class="soc1"></a></li>
-          <li><a href="#" class="soc2"></a></li>
-          <li><a href="#" class="soc3"></a></li>
-          <li><a href="#" class="soc4"></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="grid_3 team_block">
-      <a href="#"><img src="STUDIO27%20-%20Photographer%20Website_files/team2.jpg"></a>
-      <div class="team_inf">
-        <h4>Chris doe</h4>
-        <p>Photographer</p>
-        Integer aliquet arcu sit amet sem porta facilisis. Curabitur sapien sapien, blandit in
-        <ul class="team_soc">
-          <li><a href="#" class="soc1"></a></li>
-          <li><a href="#" class="soc2"></a></li>
-          <li><a href="#" class="soc3"></a></li>
-          <li><a href="#" class="soc4"></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="grid_3 team_block">
-      <a href="#"><img src="STUDIO27%20-%20Photographer%20Website_files/team3.jpg"></a>
-      <div class="team_inf">
-        <h4>sarah brown</h4>
-        <p>Photographer</p>
-        Integer aliquet arcu sit amet sem porta facilisis. Curabitur sapien sapien, blandit in
-        <ul class="team_soc">
-          <li><a href="#" class="soc1"></a></li>
-          <li><a href="#" class="soc2"></a></li>
-          <li><a href="#" class="soc3"></a></li>
-          <li><a href="#" class="soc4"></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="grid_3 team_block omega">
-      <a href="#"><img src="STUDIO27%20-%20Photographer%20Website_files/team4.jpg"></a>
-      <div class="team_inf">
-        <h4>Janice Baxter</h4>
-        <p>Photographer</p>
-        Integer aliquet arcu sit amet sem porta facilisis. Curabitur sapien sapien, blandit in
-        <ul class="team_soc">
-          <li><a href="#" class="soc1"></a></li>
-          <li><a href="#" class="soc2"></a></li>
-          <li><a href="#" class="soc3"></a></li>
-          <li><a href="#" class="soc4"></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="clear"></div>
-  </div>
-</div>
+<%= render "about" %>
 
 
 
@@ -214,130 +68,7 @@
 
 
 
-<div style="background-position: 0px -1123.78px;" class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-  <div class="container clearfix">
-
-    <div id="content" class="grid_12">
-      <h3><span>Work</span></h3>
-      <h4>Cras urna leo, fringilla nec aliquam ac, varius in enim. Maecenas
-        non felis augue, quis sagittis justo. Donec gravida, arcu in aliquet 
-        convallis, purus lectus euismod nulla, in porttitor lorem ligula nec 
-        metus. Curabitur sit amet metus quis arcu pharetra hendrerit. Nulla at 
-        tempus</h4>
-    </div>
-    <div class="clear"></div>
-    <div id="contenet">
-      <div id="options">
-        <ul id="filters" class="option-set" data-option-key="filter">
-          <li><a href="#filter" data-option-value="*" class="btn dark_btn selected">All</a></li>
-          <li><a href="#filter" data-option-value=".category01">web design</a></li>
-          <li><a href="#filter" data-option-value=".category02">graphic design</a></li>
-          <li><a href="#filter" data-option-value=".category03">motion Graphics</a></li>
-          <li><a href="#filter" data-option-value=".category04">artwork</a></li>
-        </ul>
-        <div class="clear"></div>
-      </div>
-      <div class="gallery-list">
-        <!-- portfolio_block -->
-        <div style="overflow: hidden; position: relative; height: 560px;" class="projects isotope">                                  
-          <div style="position: absolute; left: 0px; top: 0px; -moz-transform: translate(0px, 0px);" class="grid_3 element category01 isotope-item" data-category="category01">
-            <div class="hover_img">
-              <img src="STUDIO27%20-%20Photographer%20Website_files/1.jpg" alt="">
-              <span class="portfolio_zoom"><a href="http://www.template-guide.com/preview/5238/images/portfolio/full/1.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-              <span class="portfolio_link"><a href="#">View item</a></span>
-            </div> 
-            <div class="item_description">
-              <h6>Ut luctus magna non</h6>
-              web design
-            </div>
-          </div>
-          <div style="position: absolute; left: 0px; top: 0px; -moz-transform: translate(255px, 0px);" class="grid_3 element category02 isotope-item" data-category="category02">
-            <div class="hover_img">
-              <img src="STUDIO27%20-%20Photographer%20Website_files/2.jpg" alt="">
-              <span class="portfolio_zoom"><a href="http://www.template-guide.com/preview/5238/images/portfolio/full/2.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-              <span class="portfolio_link"><a href="#">View item</a></span>
-            </div> 
-            <div class="item_description">
-              <h6>Nullam ac urna id</h6>
-              web design
-            </div>
-          </div>
-          <div style="position: absolute; left: 0px; top: 0px; -moz-transform: translate(510px, 0px);" class="grid_3 element category03 isotope-item" data-category="category03">
-            <div class="hover_img">
-              <img src="STUDIO27%20-%20Photographer%20Website_files/3.jpg" alt="">
-              <span class="portfolio_zoom"><a href="http://www.template-guide.com/preview/5238/images/portfolio/full/3.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-              <span class="portfolio_link"><a href="#">View item</a></span>
-            </div> 
-            <div class="item_description">
-              <h6>viverra a egestas nisl</h6>
-              web design
-            </div>
-          </div>
-          <div style="position: absolute; left: 0px; top: 0px; -moz-transform: translate(765px, 0px);" class="grid_3 element category04 isotope-item" data-category="category04">
-            <div class="hover_img">
-              <img src="STUDIO27%20-%20Photographer%20Website_files/4.jpg" alt="">
-              <span class="portfolio_zoom"><a href="http://www.template-guide.com/preview/5238/images/portfolio/full/4.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-              <span class="portfolio_link"><a href="#">View item</a></span>
-            </div> 
-            <div class="item_description">
-              <h6>Sed fringilla nisl ac</h6>
-              web design
-            </div>
-          </div>
-          <div style="position: absolute; left: 0px; top: 0px; -moz-transform: translate(0px, 280px);" class="grid_3 element category01 isotope-item" data-category="category01">
-            <div class="hover_img">
-              <img src="STUDIO27%20-%20Photographer%20Website_files/5.jpg" alt="">
-              <span class="portfolio_zoom"><a href="http://www.template-guide.com/preview/5238/images/portfolio/full/5.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-              <span class="portfolio_link"><a href="#">View item</a></span>
-            </div> 
-            <div class="item_description">
-              <h6>est tempus convallis</h6>
-              web design
-            </div>
-          </div>
-          <div style="position: absolute; left: 0px; top: 0px; -moz-transform: translate(255px, 280px);" class="grid_3 element category02 isotope-item" data-category="category02">
-            <div class="hover_img">
-              <img src="STUDIO27%20-%20Photographer%20Website_files/6.jpg" alt="">
-              <span class="portfolio_zoom"><a href="http://www.template-guide.com/preview/5238/images/portfolio/full/6.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-              <span class="portfolio_link"><a href="#">View item</a></span>
-            </div> 
-            <div class="item_description">
-              <h6>Proin eget justo nisl</h6>
-              web design
-            </div>
-          </div>
-          <div style="position: absolute; left: 0px; top: 0px; -moz-transform: translate(510px, 280px);" class="grid_3 element category03 isotope-item" data-category="category03">
-            <div class="hover_img">
-              <img src="STUDIO27%20-%20Photographer%20Website_files/7.jpg" alt="">
-              <span class="portfolio_zoom"><a href="http://www.template-guide.com/preview/5238/images/portfolio/full/7.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-              <span class="portfolio_link"><a href="#">View item</a></span>
-            </div> 
-            <div class="item_description">
-              <h6>a pellentesque sem</h6>
-              web design
-            </div>
-          </div>
-          <div style="position: absolute; left: 0px; top: 0px; -moz-transform: translate(765px, 280px);" class="grid_3 element category04 isotope-item" data-category="category04">
-            <div class="hover_img">
-              <img src="STUDIO27%20-%20Photographer%20Website_files/8.jpg" alt="">
-              <span class="portfolio_zoom"><a href="http://www.template-guide.com/preview/5238/images/portfolio/full/8.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-              <span class="portfolio_link"><a href="#">View item</a></span>
-            </div> 
-            <div class="item_description">
-              <h6>Nulla mollis</h6>
-              web design
-            </div>
-          </div>
-          <div class="clear"></div>
-        </div>   
-        <!-- //portfolio_block -->   
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
+<%= render "work" %>
 
 <div style="background-position: 0px 1617.27px;" class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
   <div class="effect_2 padding_slide5">
@@ -355,58 +86,7 @@
 </div>
 
 
-
-<div style="background-position: 0px -1943.27px;" class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
-  <div class="container clearfix">
-
-    <div id="content" class="grid_12">
-      <h3><span>services</span></h3>
-      <h4>Nullam luctus lacus in massa feugiat venenatis. Morbi a lorem mauris. Nam egestas ligula dignissim justo ullamcorper viverra.</h4>
-    </div>
-    <div class="clear"></div>
-    <div class="grid_6">
-      <a href="#" class="serv_inf">
-        <img class="serv_icon" src="STUDIO27%20-%20Photographer%20Website_files/icon1.png">
-        <img class="serv_icon_h" src="STUDIO27%20-%20Photographer%20Website_files/icon1_h.png">
-        <p>ios development</p>
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
-        posuere cubilia Curae; Phasellus tempor ipsum vel sapien mattis
-        <div class="clear"></div>
-      </a>
-    </div>
-    <div class="grid_6 omega">
-      <a href="#" class="serv_inf">
-        <img class="serv_icon" src="STUDIO27%20-%20Photographer%20Website_files/icon2.png">
-        <img class="serv_icon_h" src="STUDIO27%20-%20Photographer%20Website_files/icon2_h.png">
-        <p>Ruby on Rails</p>
-        Nulla eu dolor mauris. Aliquam dignissim quam a massa mattis id 
-        sagittis ipsum faucibus. Nullam cursus pellentesque fermentum. 
-        Suspendisse
-        <div class="clear"></div>
-      </a>
-    </div>
-    <div class="grid_6">
-      <a href="#" class="serv_inf">
-        <img class="serv_icon" src="STUDIO27%20-%20Photographer%20Website_files/icon3.png">
-        <img class="serv_icon_h" src="STUDIO27%20-%20Photographer%20Website_files/icon3_h.png">
-        <p>UX</p>
-        Nullam cursus pellentesque fermentum. Suspendisse consequat elit malesuada metus cursus tristique. Integer in sapien eu elit
-        <div class="clear"></div>
-      </a>
-    </div>
-    <div class="grid_6 omega">
-      <a href="#" class="serv_inf">
-        <img class="serv_icon" src="STUDIO27%20-%20Photographer%20Website_files/icon4.png">
-        <img class="serv_icon_h" src="STUDIO27%20-%20Photographer%20Website_files/icon4_h.png">
-        <p>PHP</p>
-        Nullam cursus pellentesque fermentum. Suspendisse consequat elit malesuada metus cursus tristique. Integer in sapien eu elit
-        <div class="clear"></div>
-      </a>
-    </div>
-    <div class="clear"></div>
-
-  </div>
-</div>
+<%= render "services" %>
 
 
 <div style="background-position: 0px 2301.77px;" class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
@@ -426,81 +106,7 @@
 
 
 
-<div style="background-position: 0px -2591.27px;" class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5">
-  <div class="container clearfix">
-
-    <div id="content" class="grid_12">
-      <h3><span>contact</span></h3>
-      <h4>Proin eu libero id erat accumsan vehicula ut in diam. Nunc 
-        feugiat tempor orci id viverra. Sed et neque quam. Maecenas posuere 
-        sapien at ante accumsan blandit commodo velit volutpat. Vestibulum ante 
-        ipsum primis in faucibus orci luctus et ultrices posuere</h4>
-    </div>
-    
-    
-    <div class="content-part-main-box">
-      <div >
-        <div style="width:48%;float:left; margin-right: 25px;">
-        <h1>Miami, FL</h1>
-        <p>18503 Pines Blvd. Suite 315<br>Pembroke Pines, FL  33029O.<br> 408.850.0236 | F. 954-212-0221<br>
-          <iframe  scrolling="no" height="250" frameborder="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=18503+Pines+Blvd.+Suite+315+Pembroke+Pines,+FL++33029O&amp;aq=&amp;sll=26.010799,-80.395997&amp;sspn=0.001685,0.00327&amp;ie=UTF8&amp;hq=&amp;hnear=18503+Pines+Blvd+%23315,+Pembroke+Pines,+Broward,+Florida+33029&amp;t=m&amp;z=14&amp;ll=26.010799,-80.395997&amp;output=embed" marginwidth="0" marginheight="0"></iframe></p>
-        <hr>
-        </div>
-         <div style="width:48%;float:left;">
-        <h1>New Delhi, India</h1>
-        <p>5<sup>th</sup> Floor, SB Tower,<br>Sector-16A, Noida&ndash; 201301O.<br> +91 882.6680.644<br>
-          <iframe  scrolling="no" height="250" frameborder="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=regus+sector+16a+noida&amp;aq=&amp;sll=28.566297,77.315592&amp;sspn=0.001647,0.00327&amp;ie=UTF8&amp;hq=regus&amp;hnear=Sector+16A,+Noida,+Gautam+Buddh+Nagar,+Uttar+Pradesh,+India&amp;t=m&amp;ll=28.566243,77.315533&amp;spn=0.010151,0.006295&amp;output=embed" marginwidth="0" marginheight="0"></iframe>
-        </p>
-         </div>
-      </div>
-
-      
-
-    </div>
-    
-    
-    <div class="clear"></div>
-    <div id="contact_block_rel">
-      <div class="grid_5">
-        <div class="contact_form">  
-          <div id="note"></div>
-          <div id="fields">
-            <form id="ajax-contact-form" action="">
-              <input name="name" placeholder="Name" type="text">
-              <input name="subject" placeholder="Phone" type="text">
-              <input name="email" placeholder="Email" type="text">
-              <textarea name="message" id="message" placeholder="Message"></textarea>
-              <div class="clear"></div>
-              <input class="contact_btn" value="Clear form" type="reset">
-              <input class="contact_btn" value="Send" type="submit">
-              <div class="clear"></div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="grid_4 contact_det_block">
-        <h5>contact details</h5>
-        <p>Ut tincidunt, erat eu pulvinar molestie, justo nisl pharetra 
-          erat, sit amet malesuada diam turpis cursus mauris. Donec ac tempor 
-          libero.</p>
-        <p>Proin sit amet sollicitudin ante. Donec sodales, metus non congue
-          aliquam, neque mauris suscipit sapien, a ultrices lectus mauris vel 
-          ipsum. Cras</p>
-        <ul class="foot_block_intouch">
-          <li class="touch_phone"><p>(+1) 245 5462 252</p></li>
-          <li class="touch_clock"><p>Mon - Sat 9:00am - 6:00 pm</p></li>
-          <li class="touch_mail"><a href="mailto:support@lorem.com">support@lorem.com</a></li>
-          <li class="touch_site"><a href="#">www.lorem.com</a></li>
-          <li class="touch_adress"><p>3301 Lorem Ipsum, Dolor Sit Amet St</p></li>
-        </ul>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-
-
-</div>
-
+<%= render "contact" %>
 
 <div id="footer">
   <div class="container clearfix">
