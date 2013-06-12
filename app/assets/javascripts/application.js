@@ -25,7 +25,9 @@
 
 $(document).ready(function() {
     options = {
+        placement: 'bottom',
         trigger : 'hover'
+        
     }
     $('[rel="popover"]').popover(options);
 });

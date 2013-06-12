@@ -175,12 +175,11 @@ h5 {
     font-weight:bold !important;
     border-bottom:none;
 }
-#slide1 h1 span.info {
+.info {
     color:#343434;
     font-size: 18px;
     float:right;
-    margin-top: -48px;
-    margin-right: 69px;
+    margin-right: 13%;
 }
 #slide1 h1 span {
     color:#fff;
