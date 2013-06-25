@@ -18,9 +18,18 @@
 //= require jquery.stellar.min
 //= require waypoints
 //= require sorting
+//= require jquery.cycle.all
 //= require jquery.fancybox
 //= require_tree .
 
+
+
+$(document).ready(function() {
+    $('#bannerslide').cycle({
+        fx: 'scrollLeft',
+        delay: -1000
+    });
+});
 
 
 $(document).ready(function() {
@@ -173,8 +182,4 @@ jQuery(document).ready(function ($) {
 		
 	
 });
-
-
-
-
 
