@@ -24,13 +24,11 @@
 
 
 
-$(document).ready(function() {
-    $('#bannerslide').cycle({
-        fx: 'scrollLeft',
-        delay: -1000
-    });
-});
-
+ $(document).ready(function () {
+        $('.slideshow').cycle({
+          fx: 'fade'
+        });
+      });
 
 $(document).ready(function() {
     options = {
