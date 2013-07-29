@@ -67,18 +67,7 @@ h5 {
 
 
 #bannerslide li{
-     height: 500px;
-}
-
-
-.info {
-    color:#343434;
-    font-size: 18px;
-    float:right;
-    margin-bottom: 1%;
-    margin-left: 0;
-    margin-right: 25%;
-    margin-top: -2%;
+    height: 500px;
 }
 
 
@@ -808,4 +797,49 @@ textarea {
 
 .fancybox-custom .fancybox-skin {
     box-shadow: 0 0 50px #222;
-  }
+}
+
+
+.image {
+    width: 100%; /* for IE 6 */
+}
+.image-center{
+    width:100%;
+    margin:auto;
+}
+.image-center img{
+    width: 1400px;
+    height: 1000px;
+}
+.slide-content{width: 100%;}
+.transparent { 
+
+    opacity: 0.5;
+    position: absolute; 
+    bottom:  10px; 
+    left: 107px; 
+    width: 251px; 
+    height:200px;
+}
+.transparent2{
+    opacity: 0.5;
+    position: absolute;
+    left: 0; 
+    bottom: 0px; 
+    width: 100%; 
+    height: 10px;
+}
+
+.mess{
+    position: absolute; 
+    bottom:  10px; 
+    left: 107px; 
+    width: 251px; 
+}
+.mess p { 
+    opacity: 1;
+    font-weight: bold;
+    color: white; 
+    padding: 10px;
+    font-size: 21px;
+}
