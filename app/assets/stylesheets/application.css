@@ -806,6 +806,7 @@ textarea {
 .image-center{
     width:100%;
     margin:auto;
+    position: relative; 
 }
 .image-center img{
     width: 100%;
