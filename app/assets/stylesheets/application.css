@@ -23,19 +23,15 @@
 
 .slide{
     background-attachment: fixed;
-    width:100%;
     height:auto;
     position: relative;
-    padding:0;
 }
 
 
 /* ____________________________________ Slide 1 ____________________________________ */ 
 
 
-#bannerslide li{
-    height: 500px;
-}
+
 
 
 /* ____________________________________ Slide 2 ____________________________________ */ 
@@ -59,19 +55,7 @@
     background-position:0 0 !important;
     text-align:center;
 }
-.padding_slide3 {
-    padding:83px 0 78px 0;
-}
-#slide3 p {
-    padding:0 0 29px 0;
-    margin:0;
-    text-transform:uppercase;
-    font-family:'Open Sans';
-    font-size: 56px;
-    line-height: 52px;
-    color:#343434;
-    font-weight: 800;
-}
+
 
 
 
@@ -84,119 +68,6 @@
 }
 
 /* _________________ PORTFOLIO ________________ */
-
-#slide4 ul{
-    margin:0 0 29px 0;
-    padding:0;
-    list-style-type:none;
-}
-
-#slide4 .hover_img {
-    height:187px;
-    text-align:center;
-}
-
-.hover_img {
-    position:relative;
-    background:#000;
-    z-index:99;
-}
-
-.hover_img:hover .portfolio_zoom, .hover_img:hover .portfolio_link { display:block;
-}
-
-.item_description {
-    padding:0 0 7px 0;
-    background:#fff;
-    border-top:1px solid #fff;
-    border-right:1px solid #dedede;
-    border-bottom:1px solid #dedede;
-    border-left:1px solid #dedede;
-    text-align: center;
-    font-family:'Open Sans';
-    font-weight:300;
-    font-style:italic;
-    font-size:14px;
-    color:#969696;
-}
-
-.item_description h6 {
-    margin:0 0 6px 0;
-    border-bottom:1px dotted #ddd;
-    text-transform:uppercase;
-    font-style:normal;
-    color: #343434;
-    font-weight:400;
-    font-size: 16px;
-    line-height:37px;
-}
-.projects .grid_3:hover h6 {
-    color:#82b501;
-}
-.projects .grid_3:hover .item_description {
-    border-top:1px solid #82b501;
-}
-/* _________ FILTER ________ */
-
-
-/* Portfolio */
-
-/**** Isotope Filtering ****/
-.isotope-item {
-    z-index: 2;
-}
-.isotope-hidden.isotope-item {
-    pointer-events: none;
-    z-index: 1;
-}
-
-/**** Isotope CSS3 transitions ****/
-
-.isotope,
-.isotope .isotope-item {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-}
-
-.isotope {
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
-    transition-property: height, width;
-}
-
-.isotope .isotope-item {
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property:    -moz-transform, opacity;
-    transition-property:         transform, opacity;
-}
-
-/**** disabling Isotope CSS3 transitions ****/
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-    -webkit-transition-duration: 0s;
-    -moz-transition-duration: 0s;
-    transition-duration: 0s;
-}
-
-/* End: Recommended Isotope styles */
-/* disable CSS transitions for containers with infinite scrolling*/
-.isotope.infinite-scrolling {
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-}
-.element {
-    overflow: hidden;
-    position: relative;
-}
-.element img {max-width:100%;
-}
-
-/* ________ //FILTER _______ */
-
-/* ________________ //PORTFOLIO _______________ */
 
 
 /* ____________________________________ Slide 5 ____________________________________ */ 
@@ -247,29 +118,6 @@
 
 
 
-/* ____________________________________ FOOTER ____________________________________ */
-#footer {
-    border-top: 1px solid #c0b2b2;
-    position:relative;
-    z-index:101;
-    bottom:-162px;
-    padding:27px 0 23px;
-}
-.copyright {
-    float:left;
-    font-family:'Open Sans';
-    font-weight:400;
-    color: #a43a3a;
-}
-.copyright a {
-    color: #a43a3a;
-}
-.copyright a:hover{ 
-    color: #a43a3a;
-    text-decoration:none;
-    background-color: white;
-}
-
 /* _____________ BACK_TOP ___________ */
 #back_top {
     float:right;
@@ -287,15 +135,6 @@
 }
 
 
-figure {
-    margin: 0;
-}
-
-
-textarea {
-    overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
-}
 
 
 
@@ -378,4 +217,49 @@ textarea {
     color: white; 
     padding: 10px;
     font-size: 21px;
+}
+
+
+
+/* ____________________________________ FOOTER ____________________________________ */
+#footer {
+    border-top: 1px solid #c0b2b2;
+    position:relative;
+    z-index:101;
+    bottom:-162px;
+    padding: 27px 0 27px 0;
+}
+.copyright {
+    margin-left: -35px;
+    float:left;
+    font-family:'Open Sans';
+    font-weight:400;
+    color: #a43a3a;
+}
+.copyright a {
+    color: #a43a3a;
+}
+.copyright a:hover{ 
+    color: #a43a3a;
+    text-decoration:none;
+    background-color: white;
+}
+
+
+.about
+{
+list-style-image: url('/assets/ea-logo/ea-icon.png');
+}
+
+.map{width: 100%; height: 330px;}
+
+
+
+.address strong
+{
+    font-size:23px;
+}
+.address p
+{
+    margin-left: 31px;
 }
