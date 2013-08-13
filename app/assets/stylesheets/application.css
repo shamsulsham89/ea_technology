@@ -171,11 +171,7 @@
 .image {
     width: 100%; /* for IE 6 */
 }
-.image-center{
-    width:100%;
-    margin:auto;
-    position: relative; 
-}
+
 
 .image-center-banner{
     width:100%;
@@ -261,5 +257,19 @@ list-style-image: url('/assets/ea-logo/ea-icon.png');
 }
 .address p
 {
-    margin-left: 31px;
+    padding-left: 31px;
 }
+
+.image-center{
+    width:150px;
+    margin:auto;
+    position: relative; 
+}
+
+.image-center a img{
+    height: 150px;
+}
+.image-center h3{
+    text-align: center;
+}
+.image-center h5{float:right;}
