@@ -145,7 +145,7 @@ list-style-image: url('/assets/ea-logo/ea-icon.png');
    margin-right: 15px;
 }
 
-.thumbnail-tech {.thumbnail {
+.thumbnail-tech {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
